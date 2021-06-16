@@ -1,7 +1,12 @@
 Import('env', 'plugins')
 
 # Basic library of smooth and rough materials
+plugins += env.SharedLibrary('chandra', ['chandra.cpp'])
 plugins += env.SharedLibrary('diffuse', ['diffuse.cpp'])
+plugins += env.SharedLibrary('diffusion_transport', ['diffusion_transport.cpp'])
+plugins += env.SharedLibrary('lambert_sphere', ['lambert_sphere.cpp'])
+plugins += env.SharedLibrary('lambert_sphere_fast', ['lambert_sphere_fast.cpp'])
+plugins += env.SharedLibrary('lambert_sphere_hapke81', ['lambert_sphere_hapke81.cpp'])
 plugins += env.SharedLibrary('dielectric', ['dielectric.cpp'])
 plugins += env.SharedLibrary('conductor', ['conductor.cpp'])
 plugins += env.SharedLibrary('plastic', ['plastic.cpp'])
