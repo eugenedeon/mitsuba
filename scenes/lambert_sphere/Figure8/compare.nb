@@ -1,0 +1,155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5267,        147]
+NotebookOptionsPosition[      4702,        129]
+NotebookOutlinePosition[      5096,        145]
+CellTagsIndexPosition[      5053,        142]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Set your directory here:", "Section",
+ CellChangeTimes->{{3.832819204159738*^9, 
+  3.832819206440851*^9}},ExpressionUUID->"91200843-b7d0-4d3d-93b7-\
+8d181fe078a7"],
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", "\"\<scenes/lambert_sphere/Figure8\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.832819031574193*^9, 3.8328190487670813`*^9}, {
+  3.832819199996101*^9, 
+  3.832819201523201*^9}},ExpressionUUID->"2e60618d-5a8f-4ab3-881e-\
+f70deb491155"],
+
+Cell[BoxData[
+ RowBox[{"pp", "=", 
+  RowBox[{"GraphicsGrid", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<lambert_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<diffusionT_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<chandra_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<lambert_sphere_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<lambert_sphere_fast_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<lambert_sphere_hapke_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{"\"\<ON_\>\"", "<>", 
+          RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.jpg\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Range", "[", "9", "]"}], "-", "1"}]}], "}"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], ",", 
+    RowBox[{"Spacings", "\[Rule]", "0"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "1152"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8219195696676817`*^9, 3.821919664417879*^9}, {
+  3.8219196981052923`*^9, 3.821919701667489*^9}, {3.821926141189158*^9, 
+  3.821926176532516*^9}, {3.8219275508227787`*^9, 3.821927621333188*^9}, {
+  3.8219296304372673`*^9, 3.821929630838962*^9}, {3.832819056761746*^9, 
+  3.832819150474601*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"bf93c8a7-c6df-47a5-843b-5d299f77bb77"]
+}, Open  ]]
+},
+WindowSize->{1260, 821},
+WindowMargins->{{13, Automatic}, {Automatic, 42}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"00847682-54bd-4e19-8c7c-a039a308155f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 169, 3, 67, "Section",ExpressionUUID->"91200843-b7d0-4d3d-93b7-8d181fe078a7"],
+Cell[752, 27, 281, 6, 30, "Input",ExpressionUUID->"2e60618d-5a8f-4ab3-881e-f70deb491155"],
+Cell[1036, 35, 3650, 91, 388, "Input",ExpressionUUID->"bf93c8a7-c6df-47a5-843b-5d299f77bb77"]
+}, Open  ]]
+}
+]
+*)
+
