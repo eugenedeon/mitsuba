@@ -15,7 +15,10 @@ Three versions implemented: `lambert_sphere`, `lambert_sphere_fast` and `lambert
 
 ### Chandrasekhar's BRDF
 This BRDF is for a half space with isotropic scattering.  Albedo inversion and importance sampling implemented.
-Implemented as: `chandra`.
+Implemented as: `chandra`.  For more information see [A Hitchhiker's guide to multiple scattering](http://www.eugenedeon.com/hitchhikers)
 
 ### Diffusion-transport BDRF
 This models the reflectance from a non-exponential half space with isotropic scattering where the distances between collisions are drawn from a Gamma/Erlang-2 distribution.  Implemented as: `diffusion_transport`.
+Presented at ICTT and SIGGRAPH: 
+- [ICTT_abstract](https://www.researchgate.net/publication/333325137_The_Albedo_Problem_in_Nonexponential_Radiative_Transfer)
+- [SIGGRAPH course](http://www.eugenedeon.com/project/zerovar2020/)
