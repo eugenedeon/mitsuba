@@ -6,5 +6,6 @@ plugins += env.SharedLibrary('rayleigh', ['rayleigh.cpp'])
 plugins += env.SharedLibrary('kkay', ['kkay.cpp'])
 plugins += env.SharedLibrary('microflake', ['microflake.cpp'])
 plugins += env.SharedLibrary('mixturephase', ['mixturephase.cpp'])
+plugins += env.SharedLibrary('ls', ['ls.cpp'])
 
 Export('plugins')
