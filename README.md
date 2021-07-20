@@ -13,6 +13,8 @@ A batch script in `scenes/lambert_sphere/Figure8` tests a variety of diffuse BRD
 This models the reflectance from a half space comprised of sparsely distributed spherical Lambertian particles from the EGSR 2021 paper.
 Three versions implemented: `lambert_sphere`, `lambert_sphere_fast` and `lambert_sphere_hapke81`.
 
+Shader toy implementation: https://www.shadertoy.com/view/ftlXWl
+
 ### Chandrasekhar's BRDF
 This BRDF is for a half space with isotropic scattering.  Albedo inversion and importance sampling implemented.
 Implemented as: `chandra`.  For more information see [A Hitchhiker's guide to multiple scattering](http://www.eugenedeon.com/hitchhikers)
